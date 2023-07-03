@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Outfit;
+    background-color: #0d192b;
+}
+
+
+.title{
+    color: #ffffff;
+    font-size: 29px;
+    
+}
+.title:hover{
+    color: #00fff7;
+    cursor: pointer;
+}
+
+
+.grid{
+    border-bottom: solid 1px #2f425b;
+    display: grid;
+    grid-template-columns: 1fr 0.35fr;
+    overflow: hidden;
+    margin-bottom: 6%;
+    align-items: center;
+    line-height: 3em;
+}
+
+.time {
+    font-size: 14px;
+    color: #8bacda;
+}
+
+.card {
+    background-color: #14253d;
+    border-radius: 20px;
+    padding: 1.5%;
+    padding-bottom: 0%;
+    width: 310px;
+    transform: translate(0, 15%);
+}
+
+.image-container:hover{
+    position: relative;
+}
+
+.prod-logo{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-color: none;
+    z-index: 0;
+}
+
+.eyeview{
+    color: #ffffff;
+    position: absolute;
+    top: 145px;
+    left: 145px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(178, 100%, 50%);
+    opacity: 50%;
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+.price{
+    color: #00fff7;
+    font-size: 15px;
+    font-weight: 1000;
+}
+
+#singleout{
+    color: #8bacda;
+    font-size: 18px;
+}
+.profile-logo-section{
+    display: flex;
+    align-items: center;
+}
+
+.profile-logo{
+    border-radius: 50%;
+    border: solid 2px white;
+    width: 10%;
+    margin-right: 10px;
+}
+
+.creator-msg{
+    font-size: 16px;
+    color: #8bacda;
+}
+
+.creator-name{
+    color:#ffffff;
+}
+.creator-name:hover{
+    color: #00fff7;
+    cursor: pointer;
+}
+
+.attribution {
+    font-size: 12px;
+    text-align: center;
+    bottom: 0;
+    position: fixed;
+    color: white;
+  }
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1280px) {
+
+
+    .image-container:hover .overlay,
+    .image-container:hover .eyeview {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .overlay::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
