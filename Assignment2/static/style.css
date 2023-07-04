@@ -9,19 +9,20 @@ body{
 
 .card{
     padding: 12rem 0;
-    height: 500px;
+    height: 448px;
     display: flex;
 }
 
 .card-container{
     display: grid;
     grid-template-rows: auto;
-    grid-auto-rows: minmax(400px, auto);
-    max-width: 800px;
+    grid-auto-rows: minmax(170px, auto);
+    max-width: 1000px;
     margin: 0 auto;
     width: 80%;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 7px;
+    grid-gap: 0px;
+    padding-left: 0px;
 }
 
 .community-section{
@@ -30,4 +31,79 @@ body{
     background-color: #fff;
     border-top-right-radius: .3rem;
     border-top-left-radius: .3rem;
+}
+
+.Subscription-section{
+    background-color: hsl( 179, 62%, 43% );  
+    border-bottom-left-radius: .3rem; 
+}
+
+.why-section{
+    background-color: hsl( 179, 62%, 43% );
+    opacity: .7;
+    border-bottom-right-radius: .3rem;
+}
+
+.wrapper{
+    margin: 0;
+    max-width: 80%;
+}
+
+div {
+    box-sizing: border-box;
+    padding-left: 6%;
+}
+
+.join-header{
+    color: hsl( 179, 62%, 43% );
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.join-guarantee{
+    color: hsl( 71, 73%, 54% );
+    font-size: 0.9rem;
+}
+
+.join-access{
+    color: hsl( 218, 22%, 67% );
+    line-height: 2;
+}
+
+.monthly-header{
+    color: #ffffff;
+}
+
+#monthly-p{
+    color: #ffffff;
+    display: inline;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#per-month{
+    color: #ffffff;
+    opacity: .4;
+    padding-left: 1rem;
+}
+
+.monthly-access{
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.sign-up{
+    background-color: hsl( 71, 73%, 54% );;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 0 7px 29px 0 hsla(240,5%,41%,.2);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+}
+
+.monthly-sign-up, .sign-up{
+    padding: 1rem 0;
 }
