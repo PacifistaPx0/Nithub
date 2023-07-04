@@ -50,6 +50,7 @@ body{
 }
 
 div {
+    overflow: hidden;
     box-sizing: border-box;
     padding-left: 6%;
 }
@@ -106,4 +107,31 @@ div {
 
 .monthly-sign-up, .sign-up{
     padding: 1rem 0;
+}
+
+.why-header{
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+.why-us{
+    margin-block-start: 0.8rem;
+    margin-block-end: 0.3rem;
+}
+
+ul{
+    padding: 0;
+    margin-block-start: 0.8rem;
+    margin-block-end: 0.1rem;
+}
+
+li{
+    padding: 0.1rem;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .4;
 }
