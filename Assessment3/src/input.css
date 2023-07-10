@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Rubik:wght@400;500;700&display=swap");
+
+:root {
+    --color-primary-200: hsla(12, 88%, 59%, 1);
+    --color-primary-700: rgb(221, 58, 80);
+    --color-primary-800: hsla(228, 39%, 23%, 1);
+    --color-neutral-100: hsla(0, 0%, 98%, 1);
+    --color-neutral-200: hsla(13, 100%, 96%, 1);
+    --color-neutral-500: hsla(227, 12%, 61%, 1);
+    --color-neutral-900: hsla(233, 12%, 13%, 1);
+  
+    --font-family: "Be Vietnam Pro", sans-serif;
+    --font-size: 16px;
+    --font-color-body: var(--color-neutral-500);
+    --font-color-title: var(--color-primary-800);
+    --font-weight-light: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+}
+
+@layer base{
+    body{
+        background-color: var(--color-neutral-100); 
+        color: var(--font-color-body);
+        font-family: var(--font-family);
+        font-weight: var(--font-weight-medium);
+        line-height: 1.7;       
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--font-color-title);
+        font-weight: var(--font-weight-bold);
+        letter-spacing: -1px;
+        line-height: 1.25;
+    }
+    
+}
+
+@layer components{
+    .wrapper {
+        background-image: url(https://crackerfactory64.github.io/Frontend-Mentor-Projects/manage-landing-page-master/images/bg-tablet-pattern.svg), url(https://crackerfactory64.github.io/Frontend-Mentor-Projects/manage-landing-page-master/images/bg-tablet-pattern.svg);
+        background-repeat: no-repeat;
+    }
+
+    .visually-hidden {
+        left: -10000em;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .my-button{
+        background-color: brown;
+        color:white;
+        padding: 12px 16px 12px 16px;
+        border-radius: 10px;
+        font-weight: 600;
+    }
+  }
+   
+@layer utilities{
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
