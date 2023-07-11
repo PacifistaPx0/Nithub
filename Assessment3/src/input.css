@@ -51,6 +51,15 @@
         background-repeat: no-repeat;
     }
 
+    .header > nav {
+        display: flex;
+        width: 100%;
+    }
+
+    .header__nav-list {
+        display: flex;
+    }
+
     .visually-hidden {
         left: -10000em;
         position: absolute;
