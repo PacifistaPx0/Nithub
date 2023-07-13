@@ -74,6 +74,37 @@ body{
     right: -80px;
 }
 
+.mouth{
+    height: 50px;
+    width: 90px;
+    background-color: #f77e9f;
+    position: absolute;
+    top: 105px;
+    left: 50px;
+    border: 3px solid#000000;
+    border-radius: 30%;
+}
+
+.noses{
+    height: 26px;
+    width: 20px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    left: 10px;
+}
+
+.noses:before{
+    content: "";
+    height: 26px;
+    width: 20px;
+    background-color: #000000;
+    position: absolute;
+    border-radius: 50%;
+    right: -45px;
+}
+
 .ears{
     height: 55px;
     width: 55px;
